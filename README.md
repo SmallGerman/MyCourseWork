@@ -1,3 +1,7 @@
+﻿Course Work - "Beauty Salon"
+
+v4.0 - because of 4 times project re-creation (:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
