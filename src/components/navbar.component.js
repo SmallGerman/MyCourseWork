@@ -7,8 +7,8 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-dark bg-dark navbar-expand">
-                <Link to="/" className="navbar-brand">ЛяЯкаКрасуня</Link>
-                <div className="collpase navbar-collapse">
+                <Link to="/" className="logo navbar-brand">ЛяЯка</Link>
+                <div className="collpase navbar-collapse align-items-center">
                     <ul className="navbar-nav mr-auto">
                         <li className="navbar-item">
                             <Link to="/" className="nav-link">Послуги</Link>
