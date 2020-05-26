@@ -12,12 +12,14 @@ router.route('/add').post((req, res) => {
     const number = Number(req.body.number);
     const email = req.body.email;
     const date = Date.parse(req.body.date);
+    const offering = req.body.offering;
 
     const newExercise = new Exercise({
         name,
         number,
         email,
         date,
+        offering
     });
 
     newExercise.save()
@@ -44,6 +46,7 @@ router.route('/update/:id').post((req, res) => {
             exercise.number = req.body.number;
             exercise.email = Number(req.body.email);
             exercise.date = Date.parse(req.body.date);
+            exercise.offering = req.body.offering;
 
             exercise.save()
                 .then(() => res.json('Exercise updated!'))

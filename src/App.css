@@ -1,3 +1,30 @@
+
+.btn {
+  background-color: #e5e758;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+  border-radius: 10px;
+  padding: 13px 0;
+  border-bottom: 7px solid #dcdd55;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+
+.btn:active {
+  border-bottom: 7px solid #e5e758;
+  transition: all 100ms ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15) inset;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
 /* ---------- Contacts ---------- */
 
 .care {
@@ -139,4 +166,55 @@
 
 .socials a:last-child {
   margin-right: 0;
+}
+
+/* ---------- Trainers ---------- */
+
+.trainers {
+  background-color: #f4f4f4;
+  padding-bottom: 90px;
+}
+
+.trainers h2 {
+  margin-top: 60px;
+  color: #131313;
+}
+
+.trainer {
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0 50px 25px 20px;
+  margin-top: 210px;
+  width: 340px;
+}
+
+.trainer img {
+  position: absolute;
+  width: 300px;
+  height: 330px;
+  top: 40px;
+  left: 40px;
+  box-shadow: 0 8px 20px 5px rgba(0, 0, 0, 0.30980392156862746);
+}
+
+.trainer__name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #131313;
+  padding-top: 180px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.trainer__skills {
+  font-size: 15px;
+  color: #6d6d6d;
+  line-height: 1.4em;
+}
+
+.trainer__more {
+  display: block;
+  width: 230px;
+  margin: 20px auto 0;
 }

@@ -11,6 +11,7 @@ export default class ExerciseList extends Component {
         this.onChangeName = this.onChangeName.bind(this);
         this.onChangeNumber = this.onChangeNumber.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
+        this.onChangeOffer = this.onChangeOffer.bind(this);
         this.onChangeDate = this.onChangeDate.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
@@ -19,7 +20,8 @@ export default class ExerciseList extends Component {
             number: '',
             email: '',
             date: new Date(),
-            users: []
+            offering: '',
+            offers: []
         }
     }
 
@@ -46,15 +48,21 @@ export default class ExerciseList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:1488/exercises/')
+        axios.get('http://localhost:1488/service/')
             .then(response => {
                 if (response.data.length > 0){
                     this.setState({
-                        users: response.data.map(exercises => exercises.username),
-                        username: response.data[0].username
+                        offers: response.data.map(service => service.title),
+                        offering: response.data[0].title
                     })
                 }
             })
+    }
+
+    onChangeOffer(e){
+        this.setState({
+            offering: e.target.value
+        })
     }
 
     onChangeDate(date) {
@@ -71,6 +79,7 @@ export default class ExerciseList extends Component {
             number: this.state.number,
             email: this.state.email,
             date: this.state.date,
+            offering: this.state.offering,
             offer: this.state.offer
         };
 
@@ -114,22 +123,32 @@ export default class ExerciseList extends Component {
                             onChange={this.onChangeEmail}
                         />
                     </div>
+
                     <div className="form-group">
                         <label>Offer: </label>
                         <select ref={this.textInput}
                                 required
                                 className="form-control"
-                                value={this.state.name}
-                                onChange={this.componentDidMount}>
+                                value={this.state.offering}
+                                onChange={this.onChangeOffer}>
                             {
-                                this.state.users.map(function(offer) {
+                                this.state.offers.map(function(offering) {
                                     return <option
-                                        key={offer}
-                                        value={offer}>{offer}
+                                        key={offering}
+                                        value={offering}>{offering}
                                     </option>;
                                 })
                             }
                         </select>
+                    </div>
+                    <div className="form-group">
+                        <label>Service: </label>
+                        <input  type="text"
+                                required
+                                className="form-control"
+                                value={this.state.offering}
+                                onChange={this.onChangeOffer}
+                        />
                     </div>
                     <div className="form-group">
                         <label>Date: </label>

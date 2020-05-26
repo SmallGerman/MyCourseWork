@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import { YMaps, Map } from 'react-yandex-maps';
+import GoogleMapReact from 'google-maps-react';
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
-const mapState = { center: [50.76, 75.64], zoom: 9, controls: [] };
+const mapData = {
+    center: [55.751574, 37.573856],
+    zoom: 5,
+};
+
+const coordinates = [
+    [55.684758, 37.738521],
+    [57.684758, 39.738521]
+];
 
 export default class CreateUser extends Component {
     constructor(props) {
         super(props);
 
-
         this.state = {
             username: ''
-        }
+        };
     }
 
     render() {
@@ -57,12 +65,12 @@ export default class CreateUser extends Component {
                             <div className="col-xl-12 no-padding">
                                 <div className="yandex-map">
                                     <YMaps>
-                                        <div>
-                                            <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }}
-                                                 width='100%'
-                                                 state={mapState}
-                                            />
-                                        </div>
+                                        <Map
+                                            defaultState={mapData}
+                                            width='100%'
+                                        >
+                                            {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
+                                        </Map>
                                     </YMaps>
                                 </div>
                             </div>
