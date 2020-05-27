@@ -218,3 +218,225 @@
   width: 230px;
   margin: 20px auto 0;
 }
+
+/* ---------- Fitness Service ---------- */
+
+.service {
+  background-color: #f4f4f4;
+  box-shadow: 0 14px 20px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.service h4 {
+  font-weight: 700;
+  color: #131313;
+  margin-top: 60px
+}
+
+.service-info {
+  width: 365px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 145px 0 15px;
+  margin-top: 70px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.11);
+}
+
+.service-info img {
+  height: 180px;
+  width: 330px;
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  border-radius: 1px;
+}
+
+.service-info h6 {
+  color: #131313;
+  padding-left: 30px;
+}
+
+.price {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: #e5e758;
+  margin-top: -5px;
+  margin-right: 15px;
+  margin-bottom: -8px;
+  font-size: 25px;
+  color: #131313;
+  z-index: 1;
+}
+
+.price:before {
+  font-size: 15px;
+  content: attr(data-description);
+  box-sizing: border-box;
+  display: block;
+  background: #ececec;
+  color: #0229;
+  padding: 7px 6px 7px 10px;
+  position: absolute;
+  left: 53%;
+  top: 210px;
+  margin-left: -100px;
+  width: 200px;
+  line-height: 25px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: .25s ease-in-out;
+}
+
+.price:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 223px;
+  left: 81%;
+  margin-left: -8px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-color: rgba(236, 236, 236, 0);
+  border-left-color: #ececec;
+  border-width: 7px;
+  transition: .25s ease-in-out;
+  opacity: 0;
+}
+
+.price:hover:before {
+  opacity:1;
+}
+
+.price:hover:after {
+  opacity:1;
+}
+
+.price_hint-pos:before {
+  left: 57%;
+  top: 45%;
+}
+
+.price_hint-pos:after {
+  top: 47.5%;
+  left: 76%;
+}
+
+.service-info__text {
+  font-size: 16px;
+  color: #6d6d6d;
+  margin: 10px 0 55px;
+  line-height: 1.4em;
+  padding: 0 34px 0 30px;
+}
+
+.service-info__who {
+  text-align: center;
+  font-size: 16px;
+  color: #d9d9d9;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 12px;
+}
+
+.mb47 {
+  margin-bottom: 47px;
+}
+
+.mb11 {
+  margin-bottom: 11px;
+}
+
+.mb77 {
+  margin-bottom: 32px;
+}
+
+.mb78 {
+  margin-bottom: 82px;
+}
+
+.mb99 {
+  margin-bottom: 55px;
+}
+
+.mb122 {
+  margin-bottom: 32px;
+}
+
+.service-info_size {
+  width: 485px;
+  margin-top: 60px;
+  padding-top: 195px;
+  margin-bottom: 75px;
+}
+
+.service-info_size img {
+  left: 14px;
+  top: -5px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 23px;
+  color: #131313;
+  font-weight: 700;
+  padding-left: 30px;
+  line-height: 1.5em;
+  margin-top: 45px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.service-info_size .service-info__text {
+  font-size: 15px;
+  padding: 0 100px 0 30px;
+}
+
+.card-form {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.card-form__title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  line-height: 1.25em;
+}
+
+.card-form__text {
+  font-size: 15px;
+  color: #9b9b9b;
+  margin: 15px 0 25px;
+  line-height: 1.3em;
+}
+
+.card-form input {
+  width: 333px;
+  padding: 11px 0 11px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.choose .form-control {
+  padding: 0 0 0 20px;
+  width: 333px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.card-form input::placeholder {
+  color: #acacac;
+}
+
+.card-form .submit {
+  margin-top: 13px;
+}
