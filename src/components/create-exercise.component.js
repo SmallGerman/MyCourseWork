@@ -67,7 +67,7 @@ export default class CreateExercises extends Component {
                                             Жук Братко
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер мейкапу. Автор послуги Покраска Морди. Дипломований спеціаліст.
+                                            Майстер мейкапу. Автор послуги "Покраска Морди". Дипломований спеціаліст.
                                         </p>
                                         <a href="Gasimov.html" className="trainer__more btn">Докладніше</a>
                                 </div>
@@ -82,7 +82,7 @@ export default class CreateExercises extends Component {
                                             Таран Забава
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер зачісок. Автор послуг Лиса Башка Дай Пиріжка та Зачіска Клоуна. Дипломований спеціаліст.
+                                            Майстер зачісок. Автор послуг "Лиса Башка Дай Пиріжка" та "Зачіска Клоуна". Дипломований спеціаліст.
                                         </p>
                                         <a href="Nikitin.html" className="trainer__more btn">Докладніше</a>
                                 </div>
@@ -97,7 +97,7 @@ export default class CreateExercises extends Component {
                                             Чумак Явдоха
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер-масажист. Дипломований спеціаліст
+                                            Майстер-масажист. Майбутній автор послуги "Руки-базуки" Дипломований спеціаліст
                                         </p>
                                         <a href="Nikitina.html" className="trainer__more btn">Докладніше</a>
                                 </div>

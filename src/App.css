@@ -1,3 +1,37 @@
+/* SPECIFICATION */
+
+.logo:hover {
+  color: #e5e758;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: #e5e758;
+  border-color: #0062cc;
+  border-bottom: none;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #e5e758;
+  border-color: #0062cc;
+}
+
+a:hover {
+  color: #80847b;
+  text-decoration: none;
+}
+
+.headr {
+  background-color: #000;
+  padding: 15px 0 15px 21px;
+  box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.30980392156862746);
+}
+
+.nav-link {
+  color: #fff;
+}
+
 
 .btn {
   background-color: #e5e758;
@@ -158,6 +192,7 @@
 .credits {
   font-size: 13px;
   color: #8a8a8a;
+  margin: auto;
 }
 
 .socials a {
@@ -168,7 +203,7 @@
   margin-right: 0;
 }
 
-/* ---------- Trainers ---------- */
+                                          /* ---------- Masters ---------- */
 
 .trainers {
   background-color: #f4f4f4;
@@ -437,6 +472,58 @@
   color: #acacac;
 }
 
-.card-form .submit {
+.card-form .btn {
   margin-top: 13px;
+  padding-left: 0;
+}
+
+
+                                      /* ---------- Cards ---------- */
+
+.cards {
+  background-color: #f4f4f4;
+}
+
+.cards h4 {
+  margin: 60px 0 35px;
+  color: #131313;
+}
+
+.cards img {
+  margin-top: 40px;
+}
+
+.card-information {
+  color: #131313;
+  margin: 150px 0 0 25px;
+}
+
+.card-information__title {
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-information__title span {
+  color: #e5e758;
+  background-color: #131313;
+  border-radius: 10px;
+  width: 175px;
+  padding: 5px 15px 5px 15px;
+  margin-left: 8px;
+}
+
+.card-information__text {
+  font-size: 17px;
+  margin: 25px 0 30px;
+  width: 370px;
+}
+
+.card-information__text span {
+  font-weight: 800;
+}
+
+.request {
+  width: 230px;
+  text-transform: uppercase;
 }
