@@ -22,7 +22,8 @@ export default class CreateExercises extends Component {
                                             Сидоренко Марина
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер лазерної епіляції та шугаринку. Дипломований спеціаліст.
+                                            Майстер епіляції та шугарингу.<br />
+                                            Дипломований спеціаліст.
                                         </p>
                                         <a href="Devjatov.html" className="trainer__more btn">Докладніше</a>
                                 </div>
@@ -37,7 +38,8 @@ export default class CreateExercises extends Component {
                                             Гончар Наталка
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер з косметологічних послуг. Дипломований спеціаліст.
+                                            Майстер з косметологічних послуг.<br />
+                                            Дипломований спеціаліст.
                                         </p>
                                         <a href="Tarabatjeva.html" className="trainer__more btn">Докладніше</a>
                                 </div>
@@ -52,7 +54,8 @@ export default class CreateExercises extends Component {
                                             Козак Борис
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер манікюру та педікюру. Автор послуги Нігті 'Слава Україні'. Дипломований спеціаліст.
+                                            Майстер манікюру та педікюру. Автор послуги "Нігті Слава Україні".<br />
+                                            Дипломований спеціаліст.
                                         </p>
                                         <a href="Shashkov.html" className="trainer__more btn">Докладніше</a>
                                 </div>
@@ -67,7 +70,8 @@ export default class CreateExercises extends Component {
                                             Жук Братко
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер мейкапу. Автор послуги "Покраска Морди". Дипломований спеціаліст.
+                                            Майстер мейкапу. Автор послуги "Красуня Ляля".<br />
+                                            Дипломований спеціаліст.
                                         </p>
                                         <a href="Gasimov.html" className="trainer__more btn">Докладніше</a>
                                 </div>
@@ -82,7 +86,7 @@ export default class CreateExercises extends Component {
                                             Таран Забава
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер зачісок. Автор послуг "Лиса Башка Дай Пиріжка" та "Зачіска Клоуна". Дипломований спеціаліст.
+                                            Майстер зачісок. Автор послуг "Буревій емоцій" та "Гарячий юнак". Дипломований спеціаліст.
                                         </p>
                                         <a href="Nikitin.html" className="trainer__more btn">Докладніше</a>
                                 </div>
@@ -97,7 +101,8 @@ export default class CreateExercises extends Component {
                                             Чумак Явдоха
                                         </p>
                                         <p className="trainer__skills">
-                                            Майстер-масажист. Майбутній автор послуги "Руки-базуки" Дипломований спеціаліст
+                                            Майстер-масажист. Майбутній автор послуги "Золоті руки".<br />
+                                            Дипломований спеціаліст
                                         </p>
                                         <a href="Nikitina.html" className="trainer__more btn">Докладніше</a>
                                 </div>

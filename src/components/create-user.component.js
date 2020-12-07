@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import { YMaps, Map } from "react-yandex-maps";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-
-const mapData = {
-    center: [55.751574, 37.573856],
-    zoom: 5,
-};
 
 export default class CreateUser extends Component {
     constructor(props) {
@@ -36,7 +30,7 @@ export default class CreateUser extends Component {
                             <div className="col-xl-4 col-lg-3">
                                 <div className="mail">
                                     <a className="mailto"
-                                       href="mailto:Formafitnessclub@mail.ru">TypaBusinessMan1488228@gmail.com</a>
+                                       href="mailto:arsenyakym@gmail.com">arsenyakym@gmail.com</a>
                                 </div>
                             </div>
                             <div className="col-xl-3 col-lg-4">
@@ -44,7 +38,7 @@ export default class CreateUser extends Component {
                                     <img className="tel" src="/files/imgs/phone.png" alt="care">
 
                                     </img>
-                                        <a href="tel:89690402000">8-800-555-35-35</a>
+                                        <a href="tel:12345678910">1-234-567-89-10</a>
                                         <img className="whatsapp" src="/files/imgs/whatsapp.png" alt="care">
 
                                         </img>
@@ -54,18 +48,14 @@ export default class CreateUser extends Component {
                     </div>
                 </section>
                 <section className="map">
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col-xl-12 no-padding">
-                                <div className="yandex-map">
-                                    <YMaps>
-                                        <Map
-                                            defaultState={mapData}
-                                            width='100%'
-                                        >
-                                        </Map>
-                                    </YMaps>
-                                </div>
+                    <div className="no-container-fluid">
+                        <div className="row mx-0">
+                            <div className="col-xl-12 px-0">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164705.55762681522!2d23.872152863506173!3d49.83260464310914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1590664295947!5m2!1suk!2sua"
+                                    width="100%" height="150%" frameBorder="0" style={{border:0}} allowFullScreen=""
+                                    aria-hidden="false" tabIndex="0">
+                                </iframe>
                             </div>
                         </div>
                     </div>
@@ -94,7 +84,7 @@ export default class CreateUser extends Component {
                                         Надсилайте своє резюме до нас на пошту
                                     </p>
                                     <a className="mailto"
-                                       href="mailto:Formafitnessclub@mail.ru">TypaBusinessMan1488228@gmail.com</a>
+                                       href="mailto:arsenyakym@gmail.com">arsenyakym@gmail.com</a>
                                 </div>
                             </div>
                             <div className="col-xl-6 col-lg-7">

@@ -109,8 +109,9 @@ a:hover {
   color: #000;
 }
 
-.yandex-map {
+.map {
   box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.09);
+  padding-bottom: 78px;
 }
 
 /* ----- Club-Info ----- */
@@ -495,7 +496,7 @@ a:hover {
 
 .card-information {
   color: #131313;
-  margin: 150px 0 0 25px;
+  margin: 150px 0 343px 25px;
 }
 
 .card-information__title {

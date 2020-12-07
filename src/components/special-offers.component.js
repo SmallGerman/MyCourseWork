@@ -20,10 +20,10 @@ export default class CreateOffers extends Component {
                             <div className="col-xl-6 col-lg-6">
                                 <div className="card-information">
                                     <p className="card-information__title">
-                                        Агов молодик, <span>красунчик!</span>
+                                        Агов молодик, <span>красуне!</span>
                                     </p>
                                     <p className="card-information__text">
-                                        На всі клубні карти <span>-15%</span> геям, лесбіянкам, трансгендерам, блогерам.
+                                        На всі клубні карти <span>-15%</span> студентам та контент-мейкерам
                                     </p>
                                     <a href="https://imgur.com/a/AI1AO71" className="request btn order">
                                         залишити заявку
